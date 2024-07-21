@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<style>
+        h1, h2 ,label{
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #cb7049; 
+            color: white; 
+        }
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #444; 
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #514bb8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        body {
+            background-size: cover; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cecdcd;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #69afbd;
+        }
+        header:hover{
+                color: gold;
+            }
+        footer:hover{
+            color: gold;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        main {
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: space-around;
+            align-items: stretch;
+            padding: 20px;
+            background-image: url(gh.webp);
+        }
+
+        .card {
+            background-color:rgb(32, 53, 78);
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 3%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 70%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        header:hover{
+        color: gold;
+        }
+        footer:hover{
+            color: gold;
+        }
+        @media (max-width: 768px) {
+            main {
+
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+                margin-bottom: 20px;
+                align-content: center;
+            }
+        }
+
+</style>
+<body>
+    <header>
+        <h1>STUDENT PROJECT SHOW-CASE</h1>
+    </header>
+
+    <main>
+   
+        <div class="card">
+            <h2>Project submission form:-</h2>
+            <div class="form">
+              <form id="submitform" action="/dashboardSubmit" method="get">
+                    <h2>Student Information:-</h2>
+            <label for="student_name">Student Name(Team Lead):</label>
+            <input type="text" id="student_name" name="student_name" required><br>
+            
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required><br>
+
+            <h2>Team Information:-</h2>
+            <label for="teaminfo">Team Title:</label>
+            <input  type="text" id="teaminfo" name="teaminfo" required><br>
+            
+            
+            <h2>Project Information:-</h2>
+            <label for="project_title">Project Title:</label>
+            <input type="text" id="project_title" name="project_title" required><br>
+            
+            <label for="project_description">Project Idea Description:</label>
+            <textarea id="project_description" name="project_description" rows="4" required></textarea><br>
+            
+            <h2>Upload Project Files:-</h2>
+            <label for="projectlink">Detailed project explaination link:</label>
+            <input type="text" id="projectlink" name="projectlink" required><br><br>
+            
+            <input type="submit" value="Submit Project">
+                </form>
+            </div>
+        </div>
+   
+    
+    </main>
+    
+    <footer>
+        <h2>&copy; 2023 Your Dashboard. All rights reserved.</h2>
+    </footer>
+</body>
+</html>

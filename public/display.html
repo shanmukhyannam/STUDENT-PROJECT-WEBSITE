@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Display Information</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    }
+    h1, h2 ,p ,b{
+    font-weight: bold;
+    color: #aba7a7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    a:hover {
+    color: #a7b7ba; 
+    background-color: #fff; 
+    }
+    body {
+        background-color: rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    header {
+        background-color: #000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #69afbd;
+    }
+    header:hover{
+        color: gold;
+    }
+    footer:hover{
+            color: gold;
+        }
+    main {
+        justify-content: space-around;
+        align-items: stretch;
+        padding: 20px;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(main.jpg);
+    }
+
+
+    .card {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 20px;
+        width: 50%;
+        margin:  auto;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .set {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 10px 20px 20px;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .vat{
+        background-color: #ccd1d4;
+        background-image: url(nm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color 0.3s ease;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px auto;
+        justify-content: center;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+</style>
+<body>
+    <header>
+        <h1>Student Project Information</h1>
+    </header>
+    <main >
+        <div class="card">
+            <h2>Student Information:-</h2>
+            <p><strong>Student Name (Team Lead):</strong> <span id="display_student_name"></span></p>
+            <p><strong>Student ID:</strong> <span id="display_student_id"></span></p>
+
+            <h2>Team Information</h2>
+            <p><strong>Team Title:</strong> <span id="display_teaminfo"></span></p>
+
+            <h2>Project Information</h2>
+            <p><strong>Project Title:</strong> <span id="display_project_title"></span></p>
+            <p><strong>Project Idea Description:</strong> <span id="display_project_description"></span></p>
+
+            <h2>Project Links</h2>
+            <p><strong>Detailed Project Explanation Link:</strong> <iframe id="display_project_link" width="600" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+        </div><br><br>
+
+        <h2>sample projects:</h2>
+        <div class="vat">
+            
+            <div class="set">
+            <h1>project-1:</h1>
+            <h2>Student Information</h2>
+            <p><strong>Student Name (Team Lead):</strong> <span >Pothula Hemanth</span></p>
+            <p><strong>Student ID:</strong> <span>21PA1A04D3</span></p>
+
+            <h2>Team Information</h2>
+            <p><strong>Team Title:</strong> <span>Team coders</span></p>
+
+            <h2>Project Information</h2>
+            <p><strong>Project Title:</strong> <span>Movie Web Application</span></p>
+            <p><strong>Project Idea Description:</strong> <span>Web Application using Node.js,express.js, Firestore which includes sign up , Login and a dashboard</span></p>
+
+            <h2>Project Links</h2>
+            <p><strong>Detailed Project Explanation Link:</strong><iframe width="560" height="315" src="https://www.youtube.com/embed/74-Qljuozno?si=8WpN9tzz4NDHCifT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+        </div>
+        <div class="set">
+            <h1>project-2:</h1>
+            <h2>Student Information</h2>
+            <p><strong>Student Name (Team Lead):</strong> <span >Yannam Shanmukh</span></p>
+            <p><strong>Student ID:</strong> <span>21PA1A04I4</span></p>
+
+            <h2>Team Information</h2>
+            <p><strong>Team Title:</strong> <span>Team Bravers</span></p>
+
+            <h2>Project Information</h2>
+            <p><strong>Project Title:</strong> <span>FULL-STACK WEB PROJECT USING DATABASE AND API</span></p>
+            <p><strong>Project Idea Description:</strong> <span>FULL-STACK WEB PROJECT USING DATABASE AND API</span></p>
+
+            <h2>Project Links</h2>
+            <p><strong>Detailed Project Explanation Link:</strong><iframe width="560" height="315" src="https://www.youtube.com/embed/GxwF65iGGVg?si=0MT-W9jAXzzH-S5R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+        </div></div>
+        <div class="vat">
+        <div class="set">
+            <h1>project-3:</h1>
+            <h2>Student Information</h2>
+            <p><strong>Student Name (Team Lead):</strong> <span >Tenki Shiva</span></p>
+            <p><strong>Student ID:</strong> <span>21PA1A04H0</span></p>
+
+            <h2>Team Information</h2>
+            <p><strong>Team Title:</strong> <span>Team thunders</span></p>
+
+            <h2>Project Information</h2>
+            <p><strong>Project Title:</strong> <span>Telegram Chatbot</span></p>
+            <p><strong>Project Idea Description:</strong> <span>How to create a Telegram bot using Node js and API key along with the Firestore Database</span></p>
+
+            <h2>Project Links</h2>
+            <p><strong>Detailed Project Explanation Link:</strong><iframe width="560" height="315" src="https://www.youtube.com/embed/fMBSX-pk_IQ?si=WpE3pel95VfTEPoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+        </div>
+        <div class="set">
+            <h1>project-4:</h1>
+            <h2>Student Information</h2>
+            <p><strong>Student Name (Team Lead):</strong> <span >Vedula Vyshnavi</span></p>
+            <p><strong>Student ID:</strong> <span>21PA1A04H9</span></p>
+
+            <h2>Team Information</h2>
+            <p><strong>Team Title:</strong> <span>Team Bravers</span></p>
+
+            <h2>Project Information</h2>
+            <p><strong>Project Title:</strong> <span>Simple signup and login</span></p>
+            <p><strong>Project Idea Description:</strong> <span>Building a simple login and sign up page using Firestore Database and Express js</span></p>
+
+            <h2>Project Links</h2>
+            <p><strong>Detailed Project Explanation Link:</strong><iframe width="560" height="315" src="https://www.youtube.com/embed/UkhyUn9WMpU?si=sfCycoBR9swbg3lZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2 >&copy; 2023 Your Dashboard. All rights reserved.</h2>
+    </footer>
+
+    <script >
+        const urlParams = new URLSearchParams(window.location.search);
+
+    function displayFormData() {
+        const displayStudentName = document.getElementById("display_student_name");
+        const displayStudentId = document.getElementById("display_student_id");
+        const displayTeamInfo = document.getElementById("display_teaminfo");
+        const displayProjectTitle = document.getElementById("display_project_title");
+        const displayProjectDescription = document.getElementById("display_project_description");
+        const displayProjectLink = document.getElementById("display_project_link");
+
+        const studentName = urlParams.get("student_name");
+        const studentId = urlParams.get("student_id");
+        const teamInfo = urlParams.get("teaminfo");
+        const projectTitle = urlParams.get("project_title");
+        const projectDescription = urlParams.get("project_description");
+        const projectLink = urlParams.get("projectlink");
+        
+        displayStudentName.textContent = studentName;
+        displayStudentId.textContent = studentId;
+        displayTeamInfo.textContent = teamInfo;
+        displayProjectTitle.textContent = projectTitle;
+        displayProjectDescription.textContent = projectDescription;
+        displayProjectLink.href = projectLink;
+        displayProjectLink.src = projectLink;
+
+}
+
+displayFormData();
+
+    </script>
+</body>
+</html>
